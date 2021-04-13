@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <title>Login</title>
+    <note>Characters [, ], &lt; and &gt; are not allowed</note>
+    <fields>
+        <!-- Two text fields: user and password -->
+        <text_entry char_width="30"> User</text_entry>
+        <text_entry char_width="30"> Password</text_entry>
+    </fields>
+    <buttons>
+        <button type="submit">Ok</button>
+        <button type="cancel" color="red">Cancel</button>
+    </buttons>
+
+    <ch:checks xmlns:ch="http://www.example.com">
+        <ch:check>user.size &gt;= 2</ch:check>
+        <ch:check>password.size &gt;= 8</ch:check>
+    </ch:checks>
+</form>

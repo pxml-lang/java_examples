@@ -1,0 +1,22 @@
+[form
+    [title Login]
+    [note Characters \[, \], < and > are not allowed]
+    [fields
+        [- Two text fields: user and password -]
+        [text_entry (char_width=30) User]
+        [text_entry (char_width=30) Password]
+    ]
+    [buttons
+        [button [type submit] Ok]
+        [- TODO space between attributes generates error
+            [button [type cancel] [#color red] Cancel]
+        -]
+        [button [type cancel][color red] Cancel]
+        [button (type=cancel color="red") Cancel]
+    ]
+
+    [ch:checks (xmlns:ch="http://www.example.com")
+        [ch:check user.size >= 2]
+        [ch:check password.size >= 8]
+    ]
+]

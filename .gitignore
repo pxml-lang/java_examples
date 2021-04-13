@@ -1,0 +1,13 @@
+/.gradle
+/.idea
+/bin
+/build
+/temp
+/tests
+
+
+# Directories and files starting with ---
+**/---*
+
+# Directories and files starting with NOGIT_
+**/NOGIT_*

@@ -1,0 +1,18 @@
+[xs:schema (xmlns:xs=http://www.w3.org/2001/XMLSchema)
+
+    [xs:element (name=books)
+        [xs:complexType
+            [xs:sequence
+                [xs:element (name=book type=booktype minOccurs=1 maxOccurs=unbounded)]
+            ]
+        ]
+    ]
+
+    [xs:complexType (name=booktype)
+        [xs:sequence
+            [xs:element (name=isbn type=xs:string)]
+            [xs:element (name=title type=xs:string)]
+            [xs:element (name=price type=xs:decimal)]
+        ]
+    ]
+]

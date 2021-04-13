@@ -1,0 +1,18 @@
+[form 
+    [title Login]
+    [note Characters \[, \], < and > are not allowed]
+    [fields 
+        [- Two text fields: user and password -]
+        [text_entry (char_width="30") User]
+        [text_entry (char_width="30") Password]
+    ]
+    [buttons 
+        [button (type="submit")Ok]
+        [button (color="red" type="cancel")Cancel]
+    ]
+
+    [ch:checks 
+        [ch:check user.size >= 2]
+        [ch:check password.size >= 8]
+    ]
+]

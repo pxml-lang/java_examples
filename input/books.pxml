@@ -1,0 +1,17 @@
+[books
+    [book
+        [isbn 978-0135957059]
+        [title The Pragmatic Programmer: Your Journey to Mastery]
+        [price 41.41]
+    ]
+    [book
+        [isbn 978-0735619678]
+        [title Code Complete: A Practical Handbook of Software Construction]
+        [price 45.32]
+    ]
+    [book
+        [isbn 978-0134685991]
+        [title Effective Java]
+        [price 44.10]
+    ]
+]
