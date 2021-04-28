@@ -3,7 +3,7 @@ package dev.pxml.examples.pxml_xml;
 import dev.pxml.examples.Config;
 import dev.pxml.examples.Utilities;
 
-import static dev.pxml.core.utilities.PXMLToXMLConverter.PXMLFileToXMLFile;
+import static dev.pxml.core.utilities.PXMLToXMLConverter.pXMLFileToXMLFile;
 
 import java.io.File;
 
@@ -24,7 +24,7 @@ public class PXMLToXMLExamples {
 
         logMessage ( PXMLFile, XMLFile );
 
-        PXMLFileToXMLFile ( PXMLFile, XMLFile );
+        pXMLFileToXMLFile ( PXMLFile, XMLFile );
     }
 
     static void logMessage ( File from, File to ) {

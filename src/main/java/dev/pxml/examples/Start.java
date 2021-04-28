@@ -2,8 +2,8 @@ package dev.pxml.examples;
 
 import dev.pxml.examples.pxml_xml.PXMLToXMLExamples;
 import dev.pxml.examples.pxml_xml.XMLToPXMLExamples;
-import dev.pxml.examples.transformation.XMLTransformer;
-import dev.pxml.examples.validation.XMLSchemaValidator;
+import dev.pxml.examples.transformer.XSLTTransformerExamples;
+import dev.pxml.examples.validator.XMLSchemaValidatorExamples;
 
 public class Start {
 
@@ -12,6 +12,7 @@ public class Start {
         System.out.println ( "Running examples" );
 
         try {
+
             // PXML to XML
             PXMLToXMLExamples.helloWorld();
             PXMLToXMLExamples.loginForm();
@@ -21,13 +22,14 @@ public class Start {
             XMLToPXMLExamples.loginForm();
 
             // validate
-            XMLSchemaValidator.validateWithXMLAndXML();
-            XMLSchemaValidator.validateWithPXMLAndXML();
-            XMLSchemaValidator.validateWithPXMLAndPXML();
+            XMLSchemaValidatorExamples.validateXMLWithXML();
+            XMLSchemaValidatorExamples.validateXMLWithPXML();
+            XMLSchemaValidatorExamples.validatePXMLWithXML();
+            XMLSchemaValidatorExamples.validatePXMLWithPXML();
 
             // transform
-//            XMLTransformer.transformWithXMLAndXSLT();
-            XMLTransformer.transformWithPXMLAndPXSLT();
+            XSLTTransformerExamples.transformXMLWithXML();
+            XSLTTransformerExamples.transformPXMLWithPXML();
 
         } catch ( Exception e ) {
             e.printStackTrace();

@@ -3,15 +3,15 @@
     [note Characters \[, \], < and > are not allowed]
     [fields 
         [- Two text fields: user and password -]
-        [text_entry (char_width="30") User]
-        [text_entry (char_width="30") Password]
+        [text_entry (id="user") User]
+        [text_entry (id="password") Password]
     ]
     [buttons 
-        [button (type="submit")Ok]
-        [button (color="red" type="cancel")Cancel]
+        [button (type="submit") Ok]
+        [button (color="light red" type="cancel") Cancel]
     ]
 
-    [ch:checks 
+    [ch:checks (xmlns:ch="http://www.example.com") 
         [ch:check user.size >= 2]
         [ch:check password.size >= 8]
     ]

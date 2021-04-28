@@ -3,16 +3,12 @@
     [note Characters \[, \], < and > are not allowed]
     [fields
         [- Two text fields: user and password -]
-        [text_entry (char_width=30) User]
-        [text_entry (char_width=30) Password]
+        [text_entry (id=user) User]
+        [text_entry (id=password) Password]
     ]
     [buttons
-        [button [type submit] Ok]
-        [- TODO space between attributes generates error
-            [button [type cancel] [#color red] Cancel]
-        -]
-        [button [type cancel][color red] Cancel]
-        [button (type=cancel color="red") Cancel]
+        [button (type=submit) Ok]
+        [button (type=cancel color="light red") Cancel]
     ]
 
     [ch:checks (xmlns:ch="http://www.example.com")
